@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './Footer.module.scss'
 import { Row, Col, Container } from 'react-bootstrap'
-import { BsFillEnvelopeFill, BsBarChartFill } from 'react-icons/bs'
-import { FaTwitter, FaGithub } from 'react-icons/fa'
+// import { BsFillEnvelopeFill, BsBarChartFill } from 'react-icons/bs'
+import { FaGithub } from 'react-icons/fa'
 
 // #TODO add commit hash
 // const commitHash = process.env.REACT_APP_VERSION || 'dev'
@@ -39,11 +39,11 @@ export default function Footer(props) {
                 Inmagik
               </a>
               . Software under {' '}
-              <a href="https://raw.github.com/rawgraphs/rawgraphs-app/master/LICENSE">
+              <a href="https://github.com/rawgraphs/rawgraphs-app/blob/master/LICENSE.txt">
                 (Apache License 2.0)
               </a> © 2013-2021
                 — Integrated in {' '}<a href="https://tracking.exposed">Tracking Exposed</a> as implemented in {' '}
-              <a href="https://github.com/tracking-exposed/rawgraphs-app/">our fork</a>.
+              <a href="https://github.com/tracking-exposed/rawgraphs-app/">our fork</a> <FaGithub />.
             </p>
           </Col>
         </Row>
