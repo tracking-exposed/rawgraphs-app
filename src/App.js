@@ -144,9 +144,12 @@ function App() {
     setVisualOptions(getDefaultOptionsValues(options))
   }, [])
 
+  // TODO repoIssueLink should be loaded from a config file, because every tracking.exposed 
+  // domain would have different parameters. Hardcoded now for testing
   return (
     <div className="App">
-      <Header menuItems={HeaderItems} />
+      <Header menuItems={HeaderItems}
+              repoIssueLink="https://github.com/tracking-exposed/pornhub.tracking.exposed/issues" />
       <div className="app-sections">
         <Section title={`1. Load your data`} loading={loading}>
           <DataLoader
