@@ -3,115 +3,31 @@ import { Row, Col, Card } from 'react-bootstrap'
 
 const samplesList = [
   {
-    name: 'Highest grossing movies in history',
-    category: 'Bubble chart, convex hull diagram',
-    url: './sample-datasets/Bubble Chart - TOP 50 Groossing Movies.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'US Presidential Elections (1976-2020)',
-    category: 'Line Graph',
-    url: './sample-datasets/Line Graph - US Presidential Elections.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'Letter Frequency by Language',
-    category: 'Matrix plot (Heatmap)',
-    url: './sample-datasets/Matrix Plot - Letters frequencies by language.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'Aromas of wine and frequency',
-    category: 'Sunburst Diagram',
-    url: './sample-datasets/Sunburst - Wine Aromas.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'Orchestras by musical instrument',
-    category: 'Treemap, Circle packing',
-    url: './sample-datasets/Treemap - Orchestra.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'Animal kingdom classification',
-    category: 'Dendrogram',
-    url: './sample-datasets/Dendrogram - animal kingdom.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'Most populated cities per continent',
-    category: 'Boxplot, Violin plot',
-    url: './sample-datasets/Boxplot - biggest-cities.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'FIFA playes statistics',
-    category: 'Radar Chart',
-    url: './sample-datasets/Radar Chart - Fifa players.tsv',
-    delimiter: '\t',
-  },
-
-  // {
-  //   name: 'Premier League and Serie A ranking',
-  //   category: 'Slope Graph',
-  //   url: './sample-datasets/Slope graph - Premier SerieA ranking.tsv',
-  //   delimiter: '\t',
-  // },
-
-  {
-    name: 'Olympics Medals',
-    category: 'Streamgraph, Bumpchart',
-    url: './sample-datasets/Streamgraph - Olympics Medals.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'Italian Presidents',
-    category: 'Gantt chart',
-    url: './sample-datasets/Gantt chart - Italian Presidents.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'Basketball shots',
-    category: 'Hexagonal Binning',
-    url: './sample-datasets/Hexbin - basketball shots.tsv',
-    delimiter: '\t',
-  },
-
-  {
-    name: 'Energy flows',
-    category: 'Sankey diagram, Arc diagram',
-    url: './sample-datasets/Sankey - Energy flows.csv',
+    name: 'Youtube (wetest1) video session sequence',
+    category: 'VideoId recommendation in different navigation steps — 17966 records, 1.3Mb',
+    url: './sample-datasets/wetest1-session-v7.csv',
     delimiter: ',',
   },
 
-  // {
-  //   name: 'COVID-19 Vaccines',
-  //   category: 'Stacked barchart, Multiset barchart',
-  //   url: './sample-datasets/Stacked barchart - COVID-19 Vaccines.tsv',
-  //   delimiter: '\t',
-  // },
-
   {
-    name: 'New York mean wage per occupation',
-    category: 'Beeswarm plot',
-    url: './sample-datasets/Beeswarm plot - NY mean wages.tsv',
-    delimiter: '\t',
+    name: 'Youtube (wetest1) video session sequence',
+    category: 'VideoId recommendation in different navigation steps — 41033 records, 15Mb',
+    url: './sample-datasets/wetest1-home-v8.csv',
+    delimiter: ',',
   },
 
   {
-    name: 'RIAA - Revenues per Music format',
-    category: 'Bar chart',
-    url: './sample-datasets/Bar chart - RIAA Music format revenues.tsv',
-    delimiter: '\t',
+    name: 'PornHub algorithm analysis: video recommendation',
+    category: 'From potest1, see how recommendation changes  — 9060 records, 4.1Mb',
+    url: './sample-datasets/potest1-video-v3.csv',
+    delimiter: ',',
+  },
+
+  {
+    name: 'PornHub algorithm analysis: home recommendation',
+    category: 'Work in progress — 38327 records, 19Mb',
+    url: './sample-datasets/potest2-phase1-collection1.csv',
+    delimiter: ',',
   },
 ]
 export default function DataSamples({ onSampleReady, setLoadingError }) {
